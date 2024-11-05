@@ -20,8 +20,9 @@ setState() memberi tahu Flutter untuk memperbarui tampilan sesuai perubahan stat
 4. Jelaskan perbedaan antara const dengan final.
 
 const digunakan untuk nilai yang tetap sejak kompilasi, sementara final bisa ditetapkan sekali saat runtime.
+
 5. Jelaskan bagaimana cara kamu mengimplementasikan checklist-checklist di atas.
 
-    Membuat Layout: Menggunakan Scaffold, Column, Row, dan GridView.
-    Interaksi dengan setState(): Menggunakan setState() untuk memperbarui UI saat pengguna berinteraksi.
-    Penggunaan const & final: const untuk nilai statis, final untuk nilai tetap yang didapat saat runtime.
+    - Membuat Layout: Menggunakan Scaffold, Column, Row, dan GridView.
+    - Interaksi dengan setState(): Menggunakan setState() untuk memperbarui UI saat pengguna berinteraksi.
+    - Penggunaan const & final: const untuk nilai statis, final untuk nilai tetap yang didapat saat runtime.
