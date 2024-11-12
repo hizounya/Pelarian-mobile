@@ -26,3 +26,43 @@ const digunakan untuk nilai yang tetap sejak kompilasi, sementara final bisa dit
     - Membuat Layout: Menggunakan Scaffold, Column, Row, dan GridView.
     - Interaksi dengan setState(): Menggunakan setState() untuk memperbarui UI saat pengguna berinteraksi.
     - Penggunaan const & final: const untuk nilai statis, final untuk nilai tetap yang didapat saat runtime.
+
+
+
+Tugas 8
+
+1. Kegunaan const di Flutter
+
+const digunakan untuk membuat widget atau objek yang tetap (tidak berubah) selama runtime. Keuntungannya, const menghemat memori dan meningkatkan performa karena objek hanya dibuat sekali. Gunakan const pada widget atau objek yang tidak berubah. Hindari const untuk data dinamis.
+
+2. Perbedaan Column dan Row
+
+    Column: Menyusun widget secara vertikal.
+
+Column(
+  children: [Text('Item 1'), Text('Item 2')],
+);
+
+Row: Menyusun widget secara horizontal.
+
+    Row(
+      children: [Icon(Icons.star), Text('Rating')],
+    );
+
+3. Elemen Input pada Halaman Form
+
+Di form ini, saya menggunakan TextFormField untuk input teks (mood, perasaan, dan intensitas mood). Elemen input lain yang tidak digunakan termasuk Checkbox, Radio, Slider, dan DropdownButton, yang bisa digunakan untuk input jenis lain seperti opsi biner atau pilihan dari daftar.
+4. Mengatur Tema di Aplikasi Flutter
+
+Saya mengatur tema dengan ThemeData di MaterialApp, misalnya untuk warna utama dan teks agar aplikasi konsisten.
+
+MaterialApp(
+  theme: ThemeData(primarySwatch: Colors.blue),
+);
+
+5. Menangani Navigasi di Aplikasi Flutter
+
+Untuk navigasi, saya menggunakan Navigator.push untuk pindah halaman dan Navigator.pop untuk kembali. Navigator.pushReplacement dipakai jika ingin mengganti halaman saat ini.
+
+Navigator.push(context, MaterialPageRoute(builder: (context) => HalamanBaru()));
+Navigator.pop(context);
