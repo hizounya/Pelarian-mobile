@@ -66,3 +66,36 @@ Untuk navigasi, saya menggunakan Navigator.push untuk pindah halaman dan Navigat
 
 Navigator.push(context, MaterialPageRoute(builder: (context) => HalamanBaru()));
 Navigator.pop(context);
+
+Tugas 9 
+
+1. Pentingnya Model untuk JSON
+
+Model digunakan untuk memetakan JSON agar lebih terstruktur dan mempermudah manipulasi data. Tanpa model,nanti bakal ada risiko ketidaksesuaian tipe data lebih besar.
+
+2. Fungsi Library http
+
+Digunakan untuk melakukan permintaan HTTP (GET, POST, dll.) antara Flutter dan Django, selain itu memungkinkan pengambilan dan pengiriman data.
+
+3. Fungsi CookieRequest
+
+CookieRequest mengelola sesi berbasis cookie untuk autentikasi. Instance ini dibagikan ke seluruh aplikasi agar sesi tetap konsisten.
+
+4. Mekanisme Pengiriman Data
+
+  - Input data dari Flutter dikirim ke Django (POST).
+  - Django memproses data dan mengembalikan respons JSON.
+  - Data JSON dipetakan ke model di Flutter dan ditampilkan di UI.
+
+5. Mekanisme Autentikasi
+
+  - Login: Flutter kirim kredensial ke Django → Django validasi → cookie disimpan di Flutter.
+  - Register: Data pengguna dikirim ke Django → disimpan ke database.
+  - Logout: Flutter menghapus cookie dan Django menghapus sesi.
+
+6. Implementasi Checklist
+
+  - Setup model dan endpoint API di Django.
+  - Tambahkan dependensi dan buat model JSON di Flutter.
+  - Implementasikan login, register, dan logout menggunakan CookieRequest.
+  - Ambil data dari Django, tampilkan di Flutter dengan sinkronisasi data.
